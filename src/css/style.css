@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.container-link {
+    max-width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.logo{
+    max-width: 30%;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px; 
+}
+
+.links li a {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+/* Stili per le icone */
+.links li a i {
+  margin-right: 5px;
+}
+
+/* Animazione */
+.links li a:hover {
+  transform: scale(1.1); /* Ingrandimento del 10% */
+}
+
+.links li a:active {
+  transform: scale(0.9); /* Riduzione del 10% */
+}
+
+footer{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.logo{
+  width: 55%;
+  height: auto;
+  filter: drop-shadow(0 0 0.50rem white);
+  transform: translateX(0px);
+  animation: float 5s ease-out infinite;
+  object-fit: contain;
+}
+
+.links li a {
+  background-color: #fff;
+  color: #000;
+}
+
+h1{
+  color: #fff;
+}
+
+}
